@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 支出收入按钮栏 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addtitle_bg">
+        
+        <RelativeLayout 
+            android:id="@+id/add_zc_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            
+        <Button 
+            android:id="@+id/add_zc_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_zc_bt">
+            
+        </Button>
+        </RelativeLayout>
+        
+         <RelativeLayout 
+            android:id="@+id/add_sr_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+        <Button 
+            android:id="@+id/add_sr_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_sr_bt">
+            
+        </Button>
+            </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 添加项 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 金额 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/add_jine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/add_jine"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText 
+                android:id="@+id/add_jine_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:hint="@string/add_jine_text"
+                android:background="@null"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            
+        </LinearLayout>
+
+        <!-- 类别 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            
+            <TextView 
+                android:id="@+id/add_leibie"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/add_leibie"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+            <TextView
+                android:id="@+id/add_leibie123"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            
+
+            <TextView
+                android:id="@+id/add_leibie_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginRight="50dp"
+                android:gravity="right"
+                android:text="@string/add_leibie_text" />
+            
+        </LinearLayout>
+
+        <!-- 时间 备注-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+
+            <TextView
+                android:id="@+id/add_time_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/add_time_text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+             <EditText
+                android:id="@+id/add_beizhu_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:hint="@string/add_beizhu_text"
+                android:background="@null"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+       
+
+        <!-- 确认删除取消按钮 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+             
+            
+            <RelativeLayout 
+            android:id="@+id/add_ok_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/add_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_ok" />
+            
+            </RelativeLayout>
+            
+            
+            
+            <RelativeLayout 
+            android:id="@+id/add_delete_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/add_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_delete" />
+            
+            </RelativeLayout>
+            
+    
+            <RelativeLayout 
+            android:id="@+id/add_cancel_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/add_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_cancel" />
+            </RelativeLayout>
+        
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
